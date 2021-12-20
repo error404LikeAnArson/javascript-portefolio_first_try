@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Départ Gwenaëlle</title>
+</head>
+
+<body id="page" onload="onloadF()" onscroll="stickyMenu(); stickyEnd()" onresize="screenChange()">
+    <header id="header">
+        <div id="head">
+            <div id="head1">
+                <img id="photo" class ="picture" src="photo.png" alt="Départ G." onclick="gifOrImg()" onmouseover="photoHover()">
+
+                <img id="photo2" class ="picture" src="photo.png" alt="Départ G." onclick="gifOrImg()" onmouseover="photoHover()">
+
+                <img id="gif" class ="picture" src="photo.gif" alt="Départ G." onclick="gifOrImgEnd()" onmouseover="photoHover()">
+            </div>
+
+            <div id="head2">
+                <h1>DÉPART GWENAËLLE</h1>
+                <h2>/!\ Titre /!\</h2>
+            </div>
+
+            <div id="head3">
+                <div class="headB">
+                    <button id=gitB class="button" onmouseover="buttonHover(0)"
+                        onmouseout="buttonHoverEnd(0)" onclick="gitPage()">Github</button>
+                </div>
+                <div class="headB">
+                    <button id="pdfB" class="button" onmouseover="buttonHover(1)"
+                        onmouseout="buttonHoverEnd(1)" onclick="PDF()">PDF</button>
+                </div>
+                <div class="headB">
+                    <button id="sweetB" class="button" onmouseover="buttonHover(2)"
+                        onmouseout="buttonHoverEnd(2)" onclick="sweetPage()">Back</button>
+                    <button id="fullB" class="button" onmouseover="buttonHover(3)"
+                        onmouseout="buttonHoverEnd(3)" onclick="fullPage()">Full Page</button>
+                    <button id="clearB" class="button" onmouseover="buttonHover(4)"
+                        onmouseout="buttonHoverEnd(4)" onclick="clearPage()">Clear Page</button>
+                </div>
+            </div>
+
+            <div id="head4">
+                <h3>CONTACTS</h3>
+                <div id="contCol">
+                    <div class="contRow">
+                        <img class="contIcon" src="mail.png" alt="e-mail">
+                        <p class="contP">gwenaelle.depart@orange.fr</p>
+                    </div>
+                    <div class="contRow">
+                        <img class="contIcon" src="tel.png" alt="numéro">
+                        <p class="contP">06 83 94 54 03</p>
+                    </div>
+                    <div class="contRow">
+                        <img class="contIcon" src="star.png" alt="age">
+                        <p class="contP">24/01/96 25 ans</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav id="classicMenu">
+        <div id="menuIcoDiv" onclick="menuClick(6)">
+            <img id="menuSupIcon" class="menuIcon" src="menu.png" alt="menu">
+            <img id="menuIconCoin" class="menuIcon" src="menu+.png" alt="angle" onclick="menuClick(5)">
+        </div>
+        <div id="itemSup" class="classicItem" onmouseover="menuHover(5)" onmouseout="menuHoverEnd(5)" onclick="menuClick(5)">
+            <img id="menuIcon1" class="menuIcon" src="pIntero.png" alt="switch menu">
+            <img id="menuIcon2" class="menuIcon" src="!.png" alt="switch menu">
+        </div>
+        <div class="classicItem" onmouseover="menuHover(0)" onmouseout="menuHoverEnd(0)" onclick="menuClick(0)">
+            <p class="menuP">--</p>
+            <img class="menuIcon" src="blank.png" alt="--">
+        </div>
+        <div class="classicItem" onmouseover="menuHover(1)" onmouseout="menuHoverEnd(1)" onclick="menuClick(1)">
+            <p id="LandLog" class="menuP">Languages & Logiciels</p>
+            <img class="menuIcon" src="lang.png" alt="Languages & Logiciels">
+        </div>
+        <div class="classicItem" onmouseover="menuHover(2)" onmouseout="menuHoverEnd(2)" onclick="menuClick(2)">
+            <p class="menuP">Projets</p>
+            <img class="menuIcon" src="projets.png" alt="Projets">
+        </div>
+        <div class="classicItem" onmouseover="menuHover(3)" onmouseout="menuHoverEnd(3)" onclick="menuClick(3)">
+            <p id="FandEP" class="menuP">Formations & Expériences Pro</p>
+            <img class="menuIcon" src="exp.png" alt="Formations & Expériences Pro">
+        </div>
+        <div class="classicItem" onmouseover="menuHover(4)" onmouseout="menuHoverEnd(4)" onclick="menuClick(4)">
+            <p class="menuP">+++</p>
+            <img class="menuIcon" src="+++.png" alt="+++">
+        </div>
+    </nav>
+
+    <aside id="sideColumn">
+        <div id="side1">
+            <h3>LANGAGES APPRIS</h3>
+            <div id="langCol">
+                <div class="langCol1">
+                    <img class="langIcon" src="c.png" alt="C">
+
+                    <p class="langP shadow">C</p>
+                </div>
+                <div class="langCol1">
+                    <img class="langIcon" src="java.png" alt="JAVA">
+
+                    <p class="langP shadow">JAVA</p>
+                </div>
+                <div class="langCol1">
+                    <img class="langIcon" src="html_css.png" alt="HTML/CSS">
+
+                    <p class="langP shadow">HTML/CSS</p>
+                </div>
+                <div class="langCol1">
+                    <img class="langIcon" src="javascript.png" alt="JavaScript">
+
+                    <p class="langP shadow">JS</p>
+                </div>
+            </div>
+        </div>
+        <div id="side2">
+            <h3>LOGICIELS UTILISÉS</h3>
+            <div id="logCol">
+                <div class="logCol1">
+                    <div class="logRow">
+                        <img class="logIcon" src="intelliJ.png" alt="IntelliJ">
+                        <p class="logP shadow">IntelliJ</p>
+                    </div>
+                    <div class="logRow">
+                        <img class="logIcon" src="netBeans.png" alt="NetBeans">
+                        <p class="logP shadow">NetBeans</p>
+                    </div>
+                    <div class="logRow">
+                        <img class="logIcon" src="eclipse.png" alt="Eclipse">
+                        <p class="logP shadow">Eclipse</p>
+                    </div>
+                    <div class="logRow">
+                        <img class="logIcon" src="atom.png" alt="Atom">
+                        <p class="logP shadow">Atom</p>
+                    </div>
+                </div>
+                <div class="logCol1">
+                    <div class="logRow">
+                        <img id="gitBlack" class="logIcon" src="githubB.png" alt="Github">
+                        <img id="gitWhite" class="logIcon" src="githubW.png" alt="Github">
+                        <p class="logP shadow">Github</p>
+                    </div>
+                    <div class="logRow">
+                        <img id="tooLong" class="logIcon" src="visualStudioCode.png" alt="Visual Studio Code">
+                        <p class="logP shadow">Visual Studio Code</p>
+                    </div>
+                    <div class="logRow">
+                        <img class="logIcon" src="sublimText3.png" alt="Sublim Text 3">
+                        <p class="logP shadow">Sublime Text 3</p>
+                    </div>
+                    <div class="logRow">
+                        <img class="logIcon" src="office.png" alt="Pack Office">
+                        <p class="logP shadow">Pack Office</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="side3">
+            <h3>COMPÉTENCES GLOBALES</h3>
+            <div id="qCol">
+                <ul class="qCol1">
+                    <li class="s3Li shadow">Organisation</li>
+                    <li class="s3Li shadow">Rigueur</li>
+                    <li class="s3Li shadow">Autonomie</li>
+                </ul>
+                <ul class="qCol1">
+                    <li class="s3Li shadow">Curiosité</li>
+                    <li class="s3Li shadow">Passion</li>
+                    <li class="s3Li shadow">Patience</li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <main id="centralContain">
+        <div id="centCont">
+            <h3>PROJETS RÉCENTS</h3>
+            <ul id="projUl">
+                <li class="projLi shadow"><span class="toBoldAndLine">Tic-Tac-Toe: </span><span class="toIta">[projet
+                        solo; JAVA]</span> un jeu de morpion contenant 3 grilles (3x3, 4x4, 3x3x3) et 3 niveau de
+                    difficulté.
+                    Fonctionnel dans le terminal, interface graphique en développement.</li>
+                <li class="projLi shadow"><span class="toBoldAndLine">Longestword: </span><span class="toIta">[projet de
+                        groupe; JAVA]</span> un jeu style 'des chiffre et des lettres'. Jouable dans le terminal grâce à
+                    un dictionnaire intégré.</li>
+                <li class="projLi shadow"><span class="toBoldAndLine">Site Internet: </span><span class="toIta">[projet
+                        de groupe; sans programmation]</span> un site présentant notre séssion au parcours tremplin
+                    numérique.
+                    Réalisé avec WIX.</li>
+                <li class="projLi shadow"><span class="toBoldAndLine">Site Internet: </span><span class="toIta">[projet
+                        solo; HTML/CSS/Java Script]</span> ce site.</li>
+            </ul>
+        </div>
+    </main>
+
+    <div id="sideContain">
+        <div id="contain1">
+            <h3>FORMATIONS</h3>
+            <div id="formation">
+                <ul id="dateUl1" class="date FandExpUl">
+                    <li class="date1 shadow expf Sup">2021-2022</li>
+                    <li class="date1 shadow expf Sup">2021</li>
+                    <li class="date1 shadow expf">2020</li>
+                    <li class="date1 shadow expf">2018-2020</li>
+                    <li class="date1 shadow expf Sup">2017</li>
+                    <li class="date1 shadow expf">2015-2016</li>
+                    <li class="date1 shadow expf Sup">2014</li>
+                </ul>
+                <div id="timeline1">
+                    <img id="timelineImgTopB" class="arrow" src="fleche_top_b.png" alt="frise partie 1">
+                    <img id="timelineImgTopW" class="arrow" src="fleche_top_w.png" alt="frise partie 1">
+                </div>
+                <ul id="formaUl" class="FandExpUl">
+                    <li class="formaLi shadow expf Sup"><br><br></li>
+                    <li class="formaLi shadow expf Sup">Complétion Formation pré-qualifiante Parcours Tremplin
+                        Numérique 800h (Toulon).&emsp;&emsp;&emsp;</li>
+                    <li class="formaLi shadow expf">E2C (organisme d'accompagnement à l'insersion professionnel, La
+                        Garde). &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</li>
+                    <li class="formaLi shadow expf">Licence 2 dans divers parcours de mathématique, Aix-Marseille
+                        Université (non obtenue).&emsp;&emsp;&emsp;&emsp;</li>
+                    <li class="formaLi shadow expf Sup">Validation Licence 1 Mathématique-Informatique,
+                        Aix-Marseille Université.&emsp;&emsp;&emsp;&emsp;&emsp;</li>
+                    <li class="formaLi shadow expf">PACES - Première Année Commune aux Études de Santé,
+                        Aix-Marseille Université (non obtenue).</li>
+                    <li class="formaLi shadow  expfSup">Obtention Baccalauréat général Scientifique, lycée Maintenon
+                        (Hyères).&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</li>
+                </ul>
+            </div>
+        </div>
+        <div id="contain2">
+            <h3>EXPÉRIENCES PROFESSIONNELLES</h3>
+            <div id="exp">
+                <ul id="dateUl2" class="date FandExpUl">
+                    <li id="oct2021" class="shadow expf">octobre 2021 - 2 semaines</li>
+                    <li id="j-a2012" class="shadow expf">juil-août 2012 - 6 saisons</li>
+                </ul>
+                <div id="timeline2">
+                    <img id="timelineImgBottomB" class="arrow" src="fleche_bottom_b.png" alt="frise partie 2">
+                    <img id="timelineImgBottomW" class="arrow" src="fleche_bottom_w.png" alt="frise partie 2">
+                </div>
+                <ul id="expUl" class="FandExpUl">
+                    <li class="expLi shadow expf">Stage, Opérations administratives - Mairie de Hyères (Var).&emsp;
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</li>
+                    <li class="expLi shadow expf">Rayonniste-Préparateur de commandes - Pharmacie de Porto (Ota -
+                        Corse).
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer id="foot">
+        <div id="foot1">
+            <h3>LOISIRS</h3>
+            <div id="hobbyCol">
+                <div>
+                    <img class="hobB hobbies" src="ecritB.png" alt="écriture">
+                    <img class="hobW hobbies" src="ecritW.png" alt="écriture">
+                </div>
+                <div>
+                    <img class="hobB hobbies" src="handB.png" alt="handball">
+                    <img class="hobW hobbies" src="handW.png" alt="écriture">
+                </div>
+                <div>
+                    <img class="hobB hobbies" src="lectB.png" alt="lecture">
+                    <img class="hobW hobbies" src="lectW.png" alt="écriture">
+                </div>
+            </div>
+        </div>
+
+        <div id="foot2">
+            <h3>LANGUES</h3>
+            <div id="engCol">
+                <div></div>
+                <div id="engCol1">
+                    <p class="engP shadow">Anglais</p>
+
+                </div>
+                <div id="engCol2">
+                    <p class="engP shadow">Très bonne compréhension écrite</p>
+                    <p class="engP shadow">Compréhension orale notable</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id=animeB>
+        <canvas id="canvas"></canvas>
+        <img id="b40" class="bonhomme" src="t40.png" alt="animation">
+        <img id="b35" class="bonhomme" src="t35.png" alt="animation">
+        <img id="b30" class="bonhomme" src="t30.png" alt="animation">
+        <img id="b25" class="bonhomme" src="t25.png" alt="animation">
+        <img id="b20" class="bonhomme" src="t20.png" alt="animation">
+        <img id="b15" class="bonhomme" src="t15.png" alt="animation">
+        <img id="b10" class="bonhomme" src="t10.png" alt="animation">
+    </div>
+
+    <div class="startAnime n4"></div>
+    <div class="startAnime n3"></div>
+    <div class="startAnime n2"></div>
+    <div class="startAnime n1"></div>
+    <div class="startAnime n1"></div>
+    <div class="startAnime n2"></div>
+    <div class="startAnime n3"></div>
+    <div class="startAnime n4"></div>
+    <div class="startAnime n5"></div>
+    <div class="startAnime n4"></div>
+    <div class="startAnime n3"></div>
+    <div class="startAnime n2"></div>
+    <div class="startAnime n2"></div>
+    <div class="startAnime n3"></div>
+    <div class="startAnime n4"></div>
+    <div class="startAnime n5"></div>
+    <div class="startAnime n6"></div>
+    <div class="startAnime n5"></div>
+    <div class="startAnime n4"></div>
+    <div class="startAnime n3"></div>
+    <div class="startAnime n3"></div>
+    <div class="startAnime n4"></div>
+    <div class="startAnime n5"></div>
+    <div class="startAnime n6"></div>
+    <div class="startAnime n7"></div>
+    <div class="startAnime n6"></div>
+    <div class="startAnime n5"></div>
+    <div class="startAnime n4"></div>
+    <div class="startAnime n4"></div>
+    <div class="startAnime n5"></div>
+    <div class="startAnime n6"></div>
+    <div class="startAnime n7"></div>
+
+    <script src="jscript.js"></script>
+</body>
+
+</html>

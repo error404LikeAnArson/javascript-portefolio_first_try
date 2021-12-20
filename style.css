@@ -1,0 +1,58 @@
+html{
+    scrollbar-color: rgb(92, 0, 0, 0.9) rgba(165, 0, 0, 0.9);
+    scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+    width: 10px; 
+}
+
+html::-webkit-scrollbar-track{
+    background-color: rgb(92, 0, 0, 0.9);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: rgba(165, 0, 0, 0.9);
+    border-radius: 25px;
+} 
+
+#page, #head, #head3, #head4, #classicMenu, #foot{
+    display: grid;
+}
+
+#langCol, #logCol, #logCol1, .logRow, #contCol, .contRow{
+    display: grid;
+}
+
+#formation, #exp, #hobbyCol, #engCol, .langCol1, #qCol{
+    display: grid;
+}
+
+#photo:hover{
+    animation: glitch 1s infinite;
+    opacity: 0.5;
+}
+
+@keyframes glitch {
+    0% {}
+    5%  {transform: translate(5px, 0px);}
+    10%{transform: translate(-10px, 0px);}
+    15%{transform: translate(20px, 0px)}
+    20%{transform: translate(-20px, 0px);}
+    25%{transform: translate(-20px, 0px);}
+    30%{transform: translate(-25px, 0px);}
+    35%{transform: translate(50px, -20px);}
+    40%{transform: translate(-60px, 0px);}
+    41%{transform: translate(60px, 20px);}
+    45%{filter: grayscale(60%);}
+    50%{transform: translate(5px, 0px);}
+    55%{transform: translate(-10px, 0px);}
+    60%{transform: translate(20px, 0px)}
+    65%{transform: translate(-20px, 0px);}
+    70%{transform: translate(-20px, 0px);}
+    75%{transform: translate(-25px, 0px);}
+    80%{transform: translate(50px, -20px);}
+    85%{transform: translate(-50px, 0px);}
+    86%{transform: translate(50px, 20px);}
+    100%{filter: grayscale(40%);}
+} 

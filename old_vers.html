@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+       
+		<title>Départ Gwenaëlle</title>
+	</head>
+
+	<body id="page" onload ="onloadF()">
+        <header id="head">
+            <div id="head1">
+                <img id="photo" src="photo.png" alt="Départ G." onclick="gifOrImg()">
+                
+                <img id="photo2" src="photo.png" alt="Départ G." onclick="gifOrImg()">  
+                
+                <img id="gif" src="photo.gif" alt="Départ G." onclick="gifOrImgEnd()">
+            </div>
+
+            <div id="head2">
+                <h1>DÉPART GWENAËLLE</h1>
+                <h2>/!\ Titre /!\</h2>
+            </div>
+
+            <div id="head3">
+                <div class="headB">
+                    <button id=gitB onclick="gitPage()">Github</button>
+                </div>
+                <div class="headB">
+                    <button id="pdfB" onclick="PDF()">PDF</button>
+                </div>
+                <div class="headB">
+                    <button id="sweetB" onclick="sweetPage()">Click Me<br>I'm sweet</button>
+                    <button id="fullB" onclick="fullPage()">Full Page</button>
+                </div>
+            </div>
+
+            <div id="head4">
+                <h3>CONTACTS</h3>
+                <div id="contCol">
+                    <div class="iconColumn">
+                        <p></p>
+                        <div>
+                            <img class="contIcon" src="mail.png" alt="e-mail">
+                        </div>
+                        <div>
+                            <img class="contIcon" src="tel.png" alt="numéro">
+                        </div>
+                        <div>
+                            <img class="contIcon" src="star.png" alt="age">
+                        </div> 
+                    </div>
+                    <div class="iconeSide">
+                        <p class="contP">gwenaelle.depart@orange.fr</p>
+                        <p class="contP">06 83 94 54 03</p>
+                        <p class="contP">24/01/96   25 ans</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- <main> -->
+            <nav id="classicMenu">
+                <div class="classicItem" onmouseover="menuHover(0)" onmouseout="menuHoverEnd(0)" onclick="menuClick(1)">
+                    <p>Languages & Logiciels</p>
+                </div>
+                <div class="classicItem" onmouseover="menuHover(1)" onmouseout="menuHoverEnd(1)" onclick="menuClick(2)">
+                    <p>Projets</p>
+                </div>
+                <div class="classicItem" onmouseover="menuHover(2)" onmouseout="menuHoverEnd(2)" onclick="menuClick(3)">
+                    <p id="FandEP">Formations & Expériences Pro</p>
+                </div>
+                <div class="classicItem" onmouseover="menuHover(3)" onmouseout="menuHoverEnd(3)" onclick="menuClick(4)">
+                    <p>+++</p>
+                </div>
+            </nav>
+
+            <div id="sideColumn">
+                <div id="side1">
+                    <h3>LANGAGES APPRIS</h3>
+                    <div id="side1Col">
+                        <div id="langDiv1" class="langDiv">
+                            <div>
+                                <img class="langIcon" src="c.png" alt="C">
+                        
+                                <p class="langP">C</p>   
+                            </div>
+                        </div>
+                        <div id="langDiv2" class="langDiv">
+                            <div>
+                                <img class="langIcon" src="java.png" alt="JAVA">
+                            
+                                <p class="langP">JAVA</p>
+                            </div>
+                        </div>
+                        <div id="langDiv3" class="langDiv">
+                            <div>
+                                <img class="langIcon" src="html_css.png" alt="HTML/CSS">
+                            
+                                <p class="langP">HTML/CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div id="side2">
+                    <h3>LOGICIELS UTILISÉS</h3>
+                    <div id="logCol">
+                        <div class="logCol1">
+                            <div class="iconeColumn">
+                                <p></p>
+                                <div>
+                                    <img class="logIcon" src="intelliJ.png" alt="IntelliJ">
+                                </div>
+                                <div>
+                                    <img class="logIcon" src="netBeans.png" alt="NetBeans">
+                                </div>
+                                <div>
+                                    <img class="logIcon" src="eclipse.png" alt="Eclipse">
+                                </div>
+                                <div>
+                                    <img class="logIcon" src="atom.png" alt="Atom">
+                                </div>
+                            </div>
+                            <div class="iconeSide">
+                                <p class="logP">IntelliJ</p>
+                                <p class="logP">NetBeans</p>
+                                <p class="logP">Eclipse</p>
+                                <p class="logP">Atom</p>
+                            </div>
+                        </div>
+                        <div class="logCol1">
+                            <div class="iconeColumn">
+                                <p></p>
+                                <div>
+                                    <img id="gitBlack" class="logIcon" src="githubB.png" alt="Github">
+                                    <img id="gitWhite" class="logIcon" src="githubW.png" alt="Github">
+                                </div>
+                                <div>
+                                    <img id="tooLong" class="logIcon" src="visualStudioCode.png" alt="Visual Studio Code">
+                                </div>
+                                <div>
+                                    <img class="logIcon" src="sublimText3.png" alt="Sublim Text 3">
+                                </div>
+                                <div>
+                                    <img class="logIcon" src="office.png" alt="Pack Office">
+                                </div>
+                                <div>
+                                    
+                                </div>
+                            </div>
+                            <div class="iconeSide">
+                                <p class="logP">Github</p>
+                                <p class="logP">Visual Studio Code</p>
+                                <p class="logP">Sublime Text 3</p>
+                                <p class="logP">Pack Office</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div id="side3">
+                    <h3>COMPÉTENCES GLOBALES</h3>
+                    <div id="qCol">
+                        <ul class="qCol1">
+                            <li class="s3Li">Organisation</li>
+                            <li class="s3Li">Rigueur</li>
+                            <li class="s3Li">Autonomie</li>
+                        </ul>
+                        <ul class="qCol1">
+                            <li class="s3Li">Curiosité</li>
+                            <li class="s3Li">Passion</li>
+                            <li class="s3Li">Patience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="centralContain">
+                <h3>PROJETS RÉCENTS</h3>
+                <ul id="projUl">
+                    <li class="projLi"><span class="toBoldAndLigne">Tic-Tac-Toe: </span><span class="toIta">[projet solo; JAVA]</span> un jeu de morpion contenant 3 grilles (3x3, 4x4, 3x3x3) et 3 niveau de difficulté. Fonctionnel dans le terminal, interface graphique en développement.</li>
+                    <li class="projLi"><span class="toBoldAndLigne">Longestword: </span><span class="toIta">[projet de groupe; JAVA]</span> un jeu style 'des chiffre et des lettres'. Jouable dans le terminal grâce à un dictionnaire intégré.</li>
+                    <li class="projLi"><span class="toBoldAndLigne">Site Internet: </span><span class="toIta">[projet de groupe; sans programmation]</span> un site présentant notre séssion au parcours tremplin numérique. Réalisé avec WIX.</li>
+                    <li class="projLi"><span class="toBoldAndLigne">Site Internet: </span><span class="toIta">[projet solo; HTML/CSS/Java Script]</span> un site de présentation classic. Non en ligne.</li>
+                </ul>
+            </div>
+
+            <div id="sideContain">
+                <div id="contain1">
+                    <h3>FORMATIONS</h3>
+                    <div id="formation">
+                        <div class="date">
+                            <p class="date1" class="Sup">2021-2022</p>
+                            <p class="date1" class="Sup">2021</p>
+                            <p class="date1">2020</p>
+                            <p class="date1">2018-2020</p>
+                            <p class="date1" class="Sup">2017</p>
+                            <p class="date1">2015-2016</p>
+                            <p class="date1" class="Sup">2014</p>
+                        </div>
+                        <div id="timeline1">
+                            <img id="timelineImgTopB" src="fleche_top_b.png" alt="frise partie 1">
+                            <img id="timelineImgTopW" src="fleche_top_w.png" alt="frise partie 1">
+                        </div>
+                        <div class="dateSide">
+                            <ul id="formaUl">
+                                <li class="formaLi" class="Sup"></li>
+                                <li class="formaLi" class="Sup">Complétion Formation pré-qualifiante Parcours Tremplin Numérique 800h (Toulon).</li>
+                                <li class="formaLi">E2C (organisme d'accompagnement à l'insersion professionnel, La Garde).</li>
+                                <li class="formaLi">Licence 2 dans divers parcours de mathématique, Aix-Marseille Université (non obtenue).</li>
+                                <li class="formaLi" class="Sup">Validation Licence 1 Mathématique-Informatique, Aix-Marseille Université.</li>
+                                <li class="formaLi">PACES - Première Année Commune aux Études de Santé, Aix-Marseille Université (non obtenue).</li>
+                                <li class="formaLi" class="Sup">Obtention Baccalauréat général Scientifique, lycée Maintenon (Hyères).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="contain2">
+                    <h3>EXPÉRIENCES PROFESSIONNELLES</h3>
+                    <div id="exp">
+                        <div class="date">
+                            <p id="oct2021">octobre 2021 - 2 semaines</p>
+                            <p id="j-a2012">juil-août 2012 - 6 saisons</p>
+                        </div>
+                        <div id="timeline2">
+                            <img id="timelineImgBottomB" src="fleche_bottom_b.png" alt="frise partie 2">
+                            <img id="timelineImgBottomW" src="fleche_bottom_w.png" alt="frise partie 2">
+                        </div>
+                        <div class="dateSide">
+                            <ul id="expUl">
+                                <li class="expLi">Stage, Opérations administratives - Mairie de Hyères (Var).</li><br>
+                                <li class="expLi">Rayonniste-Préparateur de commandes - Pharmacie de Porto (Ota - Corse).</li>
+                            </ul>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        <!-- </main> -->
+
+        <footer id="foot">
+            <div id="foot1">
+                <h3>LOISIRS</h3>
+                <div id="hobbyCol">
+                    <div>
+                        <img class="hobB" class="hobbies" src="ecritB.png" alt="écriture">
+                        <img class="hobW" class="hobbies" src="ecritW.png" alt="écriture">
+                    </div>
+                    <div>
+                        <img class="hobB" class="hobbies" src="handB.png" alt="handball">
+                        <img class="hobW" class="hobbies" src="handW.png" alt="écriture">
+                    </div>
+                    <div>
+                        <img class="hobB" class="hobbies" src="lectB.png" alt="lecture">
+                        <img class="hobW" class="hobbies" src="lectW.png" alt="écriture">
+                    </div>
+                </div>    
+            </div>
+
+            <div id="foot2">
+                <h3>LANGUES</h3>
+                <div id="engCol">
+                    <div id="engCol1">
+                        <p class="engP">Anglais</p>
+                        
+                    </div>
+                    <div id="engCol2">
+                        <p class="engP">Très bonne compréhension écrite</p>
+                        <p class="engP">Compréhension orale notable</p>
+                    </div>
+                </div>    
+            </div>
+        </footer>
+        <script src="jscript.js"></script>
+    </body>
+</html>    
